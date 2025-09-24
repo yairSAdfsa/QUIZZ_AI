@@ -6,6 +6,5 @@ router = DefaultRouter()
 router.register(r'quizzes', QuizzViewSet)
 
 urlpatterns = [
-    path('admin/', include('django.contrib.admin.urls')),
-    path('api/', include(router.urls)),
-    ]
+    path('', include(router.urls)),  # rutas del API
+]
